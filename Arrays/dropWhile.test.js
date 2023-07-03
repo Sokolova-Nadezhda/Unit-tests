@@ -14,7 +14,7 @@ test('implemented basic functionality', () => {
     { 'user': 'pebbles', 'active': true }
   ];
 
-  expect(filter(users, predicate)).toEqual(res);
+  expect(dropWhile(users, predicate)).toEqual(res);
 });
 
 test('the method returns an empty array if the predicate is not set', () => {
