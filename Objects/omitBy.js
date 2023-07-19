@@ -1,7 +1,7 @@
 const {isValidObject} = require('../input_validation');
 
 function omitBy(object, predicate) {
-  let res = {};
+  const res = {};
 
   if (!isValidObject(object)) return res;
   if (!predicate) return res;

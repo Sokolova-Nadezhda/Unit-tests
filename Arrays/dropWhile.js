@@ -1,7 +1,7 @@
 const {isValidArray} = require('../input_validation');
 
 function dropWhile(array, predicate) {
-  let res = [];
+  const res = [];
 
   if (!isValidArray(array)) return res;
   if ((typeof predicate) === 'function') { 

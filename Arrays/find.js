@@ -1,7 +1,7 @@
 const {isValidArray} = require('../input_validation');
 
 function find(array, predicate, fromIndex = 0) {
-  let res = {};
+  const res = {};
 
   if (!isValidArray(array)) return res;
   if (!predicate) res = array[0];

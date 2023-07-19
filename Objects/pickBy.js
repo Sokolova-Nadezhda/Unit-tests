@@ -1,7 +1,7 @@
 const {isValidObject} = require('../input_validation');
 
 function pickBy(object, predicate) {
-  let res = {};
+  const res = {};
 
   if (!isValidObject(object)) return res;
   if (!predicate) return object;

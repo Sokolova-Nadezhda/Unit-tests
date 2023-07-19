@@ -1,7 +1,7 @@
 const {isValidArray} = require('../input_validation');
 
 function zip(...args) {
-  let res = [];
+  const res = [];
   
   if (!isValidArray(...args)) return res;
 
@@ -26,4 +26,3 @@ function zip(...args) {
 }
 
 module.exports = zip;
- 

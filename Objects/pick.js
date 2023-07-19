@@ -1,7 +1,7 @@
 const {isValidObject} = require('../input_validation');
 
 function pick(object, ...paths) {
-  let res = {};
+  const res = {};
   
   if (!isValidObject(object)) return res;
   for (let i = 0; i < paths.length; i ++) {

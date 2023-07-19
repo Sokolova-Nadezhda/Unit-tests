@@ -1,14 +1,14 @@
 const {isValidObject} = require('../input_validation');
 
 function toPairs(object) {
-  let res = [];
+  const res = [];
 
   if (!isValidObject(object)) return res;
 
   object.__proto__ = {};
 
   for (let key in object) {
-    let array = [];
+    const array = [];
     array[array.length] = key;
     array[array.length] = object[key];
     res[res.length] = array;

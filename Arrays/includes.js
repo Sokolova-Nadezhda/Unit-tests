@@ -1,7 +1,7 @@
 const {isValidArray} = require('../input_validation');
 
 function includes(array, value, fromIndex = 0) {
-  let res = false;
+  const res = false;
 
   if (!isValidArray(array)) return res;
 

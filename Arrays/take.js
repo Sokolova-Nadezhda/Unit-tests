@@ -1,7 +1,7 @@
 const {isValidArray} = require('../input_validation');
 
 function take(array, n = 1) {
-  let res = [];
+  const res = [];
 
   if (!isValidArray(array)) return res;
   
@@ -14,4 +14,3 @@ function take(array, n = 1) {
 }
 
 module.exports = take;
- 

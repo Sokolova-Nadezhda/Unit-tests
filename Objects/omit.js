@@ -1,7 +1,7 @@
 const {isValidObject} = require('../input_validation');
 
 function omit(object, ...paths) {
-  let res = {};
+  const res = {};
   
   if (!isValidObject(object)) return res;
   

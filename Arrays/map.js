@@ -1,7 +1,7 @@
 const {isValidArray} = require('../input_validation');
 
 function map(array, iteratee) {
-  let res = [];
+  const res = [];
 
   if (!isValidArray(array)) return res;
   if (!iteratee) return array;
